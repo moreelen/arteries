@@ -1036,6 +1036,87 @@ svg {
 }
 
 /*--------------------------------------------------------------
+## About
+--------------------------------------------------------------*/
+#about-background {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 90vh;
+	position: relative;
+	background-image: url('img/about.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#what-do {
+	margin: 0;
+	width: 100%;
+	background-color: white;
+}
+
+#what-do div {
+	padding-top: 30px;
+}
+
+#what-text h2 {
+	margin-top: 0px;
+}
+
+#what-photo {
+	height: 500px;
+	background-image: url('img/offer.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#what-photo .row {
+	margin-top: 150px;
+}
+
+#offer {
+	background-color: #f1234c;
+	color: white;
+	padding: 30px;
+	left: 20px;
+}
+
+#offer h2 {
+	font-size: 24px;
+	font-weight: lighter;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-transform: capitalize;
+}
+
+#offer h3 {
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 14px;
+}
+
+#connections {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+#connections h2 {
+	text-align: center;
+}
+
+#con-logos p a {
+	color: #433d35;
+	text-decoration: none;
+}
+
+#con-logos p img {
+	max-width: 300px;
+}
+
+/*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 .comment-content a {

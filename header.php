@@ -28,7 +28,7 @@
 		<div id="head" class="content">
 			<div class="row">
 				<div class="logo col-sm-2 col-md-2 col-lg-2">
-					<img src="./wp-content/themes/arteries/img/arteries-white.png">
+					<img src="http://arteries.earth/wp-content/themes/arteries/img/arteries-white.png">
 				</div>
 				<div class="main-right col-sm-4 col-md-8 col-lg-8">
 					<nav id="site-navigation" class="main-navigation">
@@ -51,5 +51,4 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
-
 	<div id="content" class="site-content">
