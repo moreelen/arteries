@@ -42,7 +42,7 @@
 		<div id="newsletter" class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12">
-					<h2>Sign up to our mailing list.</h2>
+					<h2>Sign up to our mailing list</h2>
 					<form>
 						<input type="text" name="firstname" value="First name">
 						<input type="text" name="lastname" value="Last name">
@@ -56,6 +56,17 @@
 							</svg>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+		<div id="up-background" class="container">
+			<div class="row">
+				<div id="up" class="hidden-xs col-sm-2 col-sm-offset-10 col-md-2 col-md-offset-10 col-lg-2 col-lg-offset-10"><a href="#top">
+					<svg width="12" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+					<line id="svg_7" y2="20" x2="6" y1="0" x1="6" stroke="#ffffff"></line>
+					<line id="svg_8" y2="0" x2="6" y1="15" x1="20" stroke="#ffffff"></line>
+					<line id="svg_9" y2="6" x2="0" y1="0" x1="6" stroke="#ffffff"></line>
+					</svg></a>
 				</div>
 			</div>
 		</div>

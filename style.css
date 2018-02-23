@@ -1037,7 +1037,26 @@ svg {
 #newsletter {
 	text-align: center;
 	padding-top: 30px;
-	padding-bottom: 60px;
+	padding-bottom: 0px;
+}
+
+#up-background {
+	width: 100%;
+	position: relative;
+	padding-bottom: 0px;
+}
+
+#up {
+	background-color: #f1234c;
+	color: white;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+    right: 0px;
+}
+
+#up svg {
+	margin-top: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -1064,6 +1083,39 @@ svg {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+/*-------------------------*/
+
+.single svg {
+	fill: #433d35;
+}
+
+.single a {
+	color: #433d35;
+}
+
+.single a:hover {
+	color: #433d35;
+	border-bottom: 1px solid #433d35;
+}
+
+.single a:visited {
+	color: #433d35;
+}
+
+.single #logo-img {
+	content: url('http://arteries.earth/wp-content/themes/arteries/img/arteries-red.png');
+}
+
+/*-------------------------*/
+
+#post-content {
+	background-color: #ffffff;
+}
+
+#post-extender {
+	height: 10vh;
 }
 
 /*--------------------------------------------------------------

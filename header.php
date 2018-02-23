@@ -26,9 +26,10 @@
 
 	<header id="masthead" class="site-header">
 		<div id="head" class="content">
+			<a id="top"></a>
 			<div class="row">
 				<div class="logo col-sm-2 col-md-2 col-lg-2">
-					<a href="https://arteries.earth/"><img src="http://arteries.earth/wp-content/themes/arteries/img/arteries-white.png"></a>
+					<a href="https://arteries.earth/"><img id="logo-img" src="http://arteries.earth/wp-content/themes/arteries/img/arteries-white.png"></a>
 				</div>
 				<div class="main-right col-sm-4 col-md-8 col-lg-8">
 					<nav id="site-navigation" class="main-navigation">
