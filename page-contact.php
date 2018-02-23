@@ -17,9 +17,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div id="contact-background" class="container">
-				<div class="row">
-					<div id="contact-intro" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-						<h1 id="scroll">Contact us</h1>
+				<div class="darken">
+					<div class="row">
+						<div id="contact-intro" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+							<h1 id="scroll">Contact us</h1>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -23,6 +23,24 @@ get_header(); ?>
 							<h1 id="scroll">Weaving together an abundant world.</h1>
 						</div>
 					</div>
+					<div id="arrow-row" class="row">
+						<div id="arrow" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 133 42" style="enable-background:new 0 0 133 42;" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:#f8f5ee;}
+								.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+							</style>
+							<path class="st0" d="M133,42c-32,0-27.1-42-64.8-42S30.3,42,0,42"/>
+							<g>
+								<line class="st1" x1="66.5" y1="10" x2="66.5" y2="31"/>
+								<line class="st1" x1="59.5" y1="24" x2="66.5" y2="31"/>
+								<line class="st1" x1="73.5" y1="24" x2="66.5" y2="31"/>
+							</g>
+							</svg>
+
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="welcome-background" class="container">
