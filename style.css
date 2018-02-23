@@ -1081,7 +1081,7 @@ svg {
 }
 
 #what-do div {
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 #what-text h2 {
@@ -1094,6 +1094,8 @@ svg {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #what-photo .row {
@@ -1121,10 +1123,17 @@ svg {
 	margin-bottom: 14px;
 }
 
+#practice {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
 #connections {
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 60px;
+	background-color: #ffffff;
+	width: 100%;
 }
 
 #connections h2 {
