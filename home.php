@@ -19,7 +19,7 @@ get_header(); ?>
 			<div id="main-background" class="container">
 				<div class="darken">
 					<div class="row">
-						<div id="main-intro" class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+						<div id="main-intro" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 							<h1 id="scroll">Weaving together an abundant world.</h1>
 						</div>
 					</div>
