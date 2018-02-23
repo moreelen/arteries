@@ -51,6 +51,24 @@
 		links[i].addEventListener( 'blur', toggleFocus, true );
 	}
 
+	// Hide navbar if past point.
+	var scrollPoint = document.getElementById('scroll');
+	var myNav = document.getElementById('head');
+	console.log(scrollPoint)
+	window.onscroll = function () { 
+	    "use strict";
+	    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
+	    	console.log('scrolled')
+	        myNav.classList.add("nav-hide");
+	        myNav.classList.remove("nav-transparent");
+	    } 
+	    else {
+	    	console.log('top')
+	        myNav.classList.add("nav-transparent");
+	        myNav.classList.remove("nav-hide");
+	    }
+	};
+
 	/**
 	 * Sets or removes .focus class on an element.
 	 */

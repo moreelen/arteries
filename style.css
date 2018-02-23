@@ -310,6 +310,23 @@ h3 {
 	font-weight: bold;
 	color: #f1234c;
 	margin-top: 0px;
+	text-align: left;
+}
+
+h4 {
+	font-weight: bold;
+	margin-top: 14px;
+	padding-left: 14px;
+    padding-right: 14px;
+}
+
+h5 {
+	font-weight: bold;
+	color: grey;
+	margin-top: 14px;
+	margin-bottom: 0px;
+	padding-left: 14px;
+	padding-right: 14px;
 }
 
 p {
@@ -438,11 +455,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
+	border: 0px;
+	background: none;
 	font-size: 12px;
 	font-size: 0.75rem;
 	line-height: 1;
@@ -453,7 +467,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	
 }
 
 button:active, button:focus,
@@ -463,7 +477,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
+	
 }
 
 input[type="text"],
@@ -546,6 +560,20 @@ a:hover, a:focus, a:active {
 	text-decoration: none;
 }
 
+.button-post {
+	background-color: #ffffff;
+	font-weight: bold;
+	color: #f1234c;
+	padding: 14px;
+	display: inline-block;
+	float: left;
+}
+
+.button-post a, .button-post a:visited, .button-post a:focus, .button-post a:active {
+	color: #f1234c;
+	text-decoration: none;
+}
+
 input[type="text"] {
 	color: #433d35;
     border: 0px;
@@ -575,13 +603,17 @@ input[type="submit"] {
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: inline-block;
 	width: 100%;
-	position: absolute;
-	left: 25%;
+	position: relative;
 	text-transform: uppercase;
 	font-weight: normal;
+  	text-align: center;
+}
+
+.main-right {
+	display: flex;
+    justify-content: space-between;
 }
 
 .main-navigation ul {
@@ -620,20 +652,34 @@ input[type="submit"] {
 }
 
 .main-navigation li {
-	float: left;
 	position: relative;
 	padding: 14px;
+	text-align: center;
+    display: inline-block;
 }
 
 .main-navigation a {
-	display: block;
+	display: inline-block;
 	text-decoration: none;
+}
+
+.nav-transparent {
+	display: block;
+}
+
+.nav-hide {
+	display: none;
 }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+}
+
+.main-navigation.toggled li {
+	background-color: #433d35;
+	width: 150px;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -679,6 +725,8 @@ input[type="submit"] {
 
 #head img {
 	max-width: 150px;
+	float: left;
+	position: relative;
 }
 
 #head a:hover {
@@ -838,8 +886,8 @@ svg {
 
 #welcome {
 	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
 #story-text {
@@ -878,12 +926,43 @@ svg {
 
 #hub {
 	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+#hub .post {
+	background-color: #ffffff;
+	background-clip: content-box;
+	text-align: left;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* 3rd post temporary bug fix */
+@media (min-width: 767px) {
+	#posts-row div:nth-of-type(3) {
+		top: -24px;
+	}
+}
+/* End temp bug fix */
+
+.post p {
+	padding-left: 14px;
+    padding-right: 14px;
+}
+
+.more-posts {
+	padding-top: 30px;
 }
 
 #connect {
 	text-align: center;
 	background-color: #ffffff;
 	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
 #insta {
@@ -926,7 +1005,8 @@ svg {
 
 #newsletter {
 	text-align: center;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
 /*--------------------------------------------------------------

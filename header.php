@@ -27,12 +27,12 @@
 	<header id="masthead" class="site-header">
 		<div id="head" class="content">
 			<div class="row">
-				<div class="col-sm-3 col-md-3 col-lg-3">
+				<div class="logo col-sm-2 col-md-2 col-lg-2">
 					<img src="./wp-content/themes/arteries/img/arteries-white.png">
 				</div>
-				<div class="col-sm-4 col-md-7 col-lg-7">
+				<div class="main-right col-sm-4 col-md-8 col-lg-8">
 					<nav id="site-navigation" class="main-navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'arteries' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></button>
 						<?php
 							wp_nav_menu( array(
 								'theme_location' => 'menu-1',

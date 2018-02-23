@@ -20,7 +20,7 @@ get_header(); ?>
 				<div class="darken">
 					<div class="row">
 						<div id="main-intro" class="col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-							<h1>Weaving together an abundant world.</h1>
+							<h1 id="scroll">Weaving together an abundant world.</h1>
 						</div>
 					</div>
 				</div>
@@ -78,20 +78,36 @@ get_header(); ?>
 						<p>The Arteries Hub is filled with info on our projects, events and other stories. Be sure to sign up to our mailing list for updates.</p>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" id="posts-row">
 
-			        <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>`
+			        <?php $the_query = new WP_Query( 'posts_per_page=2' ); ?>`
 
 			        <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-			            <div class="post col-sx-12 col-sm-3 col-md-3 col-lg-3">
+			            <div class="post col-sx-12 col-sm-4 col-md-4 col-lg-4">
 
 			            <?php
 			                if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-			                    the_post_thumbnail('medium');
+			                    the_post_thumbnail('medium_large');
 			                } ?>
 
-			            <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
+			            <h5><?php the_time('j M Y'); ?></h5>
+
+			            <h4><?php the_title(); ?></h4>
+
+			            <p><?php the_excerpt(); ?></p>
+
+			            <div class="button-post">
+							<a href="<?php the_permalink() ?>">Read more</a>
+							<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							<line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#f1234c"></line>
+							<line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#f1234c"></line>
+							<line id="svg_5" y2="6" x2="20" y1="12" x1="15" stroke="#f1234c"></line>
+							</svg>
+						</div>
+
+
+			        	</div>
 
 			            <?php
 			        endwhile;
@@ -101,7 +117,7 @@ get_header(); ?>
 					
 				</div>
 				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
+					<div class="more-posts col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
 						<div class="button">
 							<a href="#">More posts</a>
 							<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
