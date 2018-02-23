@@ -28,7 +28,7 @@ get_header(); ?>
             
             <div id="categories" class="container">
                 <div class="row">
-                    <div id="ul-container" class="col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
+                    <div id="ul-container" class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
                         <h2>Select topic</h2>
                         <ul>
                             <?php wp_list_categories( array(
