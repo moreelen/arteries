@@ -496,10 +496,11 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+	color: #433d35;
+    border: 0px;
+    border-radius: 0px;
+    padding: 14px;
+    margin: 5px;
 }
 
 input[type="text"]:focus,
@@ -1433,6 +1434,10 @@ ul {
 	text-decoration: none;
 	font-weight: bold;
 	color: #433d35;
+}
+
+#form_contact {
+	text-align: left;
 }
 
 /*--------------------------------------------------------------
