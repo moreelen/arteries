@@ -20,7 +20,7 @@ get_header(); ?>
 				<div class="darken">
 					<div class="row">
 						<div id="main-intro" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-							<h1 id="scroll">Weaving together an abundant world.</h1>
+							<h1 id="scroll">Pluriversal Futures</h1>
 						</div>
 					</div>
 					<div id="arrow-row" class="row">
@@ -60,7 +60,7 @@ get_header(); ?>
 						<p>With roots in 5 continents and having travelled many routes across the globe, Arteries brings together insights &amp; initiatives from research &amp; innovation, collaborative governance, bioregional planning, social change, health, design &amp; arts practice.</p>
 						<p>Humans – across time - have created many worlds. On one earth. By re-weaving traditions, innovations &amp; political and social adaptations, we regenerate worlds that are diverse, just, sustainable, community-led and resilient. Effective social transformation connects thousands of people &amp; communities. We work with this diversity, creating abundance from difference.</p>
 						<div class="button">
-							<a href="#">More about us</a>
+							<a href="/about">More about us</a>
 							<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 							<line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#ffffff"></line>
 							<line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#ffffff"></line>
@@ -79,7 +79,7 @@ get_header(); ?>
 						<p>To create a future that includes all of us, we need to recognise that most people navigate many worlds on a daily basis.</p>
 						<p>From there, we create. A world where many worlds fit, on one earth.</p>
 						<div class="button">
-							<a href="#">Learn more</a>
+							<a href="hub">Learn more</a>
 							<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 							<line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#ffffff"></line>
 							<line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#ffffff"></line>
@@ -137,7 +137,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="more-posts col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
 						<div class="button">
-							<a href="#">More posts</a>
+							<a href="/hub">More posts</a>
 							<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 							<line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#ffffff"></line>
 							<line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#ffffff"></line>

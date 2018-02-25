@@ -17,9 +17,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div id="about-background" class="container">
-				<div class="row">
-					<div id="about-intro" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-						<h1 id="scroll">About us</h1>
+				<div class="darken">
+					<div class="row">
+						<div id="about-intro" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+							<h1 id="scroll">About us</h1>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -34,7 +36,7 @@ get_header(); ?>
 						</div>
 						<div id="what-photo" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<div class="row">
-								<div id="offer" class="col-xs-12 col-sm-8 col-sm-offset-4 col-md-8 col-offset-4 col-lg-8 col-lg-offset4">
+								<div id="offer" class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-6 col-offset-6 col-lg-6 col-lg-offset-6">
 									<h3>What we offer</h3>
 									<h2>Research</h2>
 									<h2>Facilitation</h2>

@@ -14,6 +14,7 @@
 
 get_header(); ?>
 
+
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <div id="hub-background" class="container">
@@ -28,7 +29,7 @@ get_header(); ?>
             
             <div id="categories" class="container">
                 <div class="row">
-                    <div id="ul-container" class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+                    <div id="ul-container" class="col-sm-12 col-md-12 col-lg-12">
                         <h2>Select topic</h2>
                         <ul>
                             <?php wp_list_categories( array(
@@ -39,51 +40,88 @@ get_header(); ?>
                 </div>
                 <div class="row" id="posts-row">
 
-                    <?php 
-
-                    global $query_string;
-                    query_posts( $query_string .'&posts_per_page=5' );
-
-                    // Check if there are any posts to display
-                    if ( have_posts() ) : ?>
-                     
                     <?php
-                     
+
+                    // Grid parameters
+                    $counter = 1; // Start counter.
+                    $grids = 3; // Grids per row.
+                    $titlelength = 50; // Length of the post titles shown below the thumbnails.
+
+                    // Query
+                   $args=array (
+                        'post_type' => 'post',
+                        'posts_per_page' => -1
+                        );
+                    $the_query = new WP_Query($args);
                     // The Loop
-                    while ( have_posts() ) : the_post(); ?>
+                    while ( $the_query->have_posts() ) :
+                        $the_query->the_post();
+
+
+                    // Show all columns except the right hand side column
+                    if($counter != $grids) :
+                    ?>
                     
-                    <div class="post col-sx-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="post griditemleft">
+
+                        <?php
+                            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                                the_post_thumbnail('medium_large');
+                            } ?>
+
+                        <h5><?php the_time('j M Y'); ?></h5>
+
+                        <h4><?php the_title(); ?></h4>
+
+                        <p><?php the_excerpt(); ?></p>
+
+                        <div class="button-post">
+                            <a href="<?php the_permalink() ?>">Read more</a>
+                            <svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                            <line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#f1234c"></line>
+                            <line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#f1234c"></line>
+                            <line id="svg_5" y2="6" x2="20" y1="12" x1="15" stroke="#f1234c"></line>
+                            </svg>
+                        </div> <!-- Grid item left -->
+                    </div>
 
                     <?php
-                        if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-                            the_post_thumbnail('medium_large');
-                        } ?>
+                    // Show the right hand side column
+                    elseif($counter == $grids) :
+                    ?>
 
-                    <h5><?php the_time('j M Y'); ?></h5>
+                    <div class="post griditemright">
 
-                    <h4><?php the_title(); ?></h4>
+                        <?php
+                            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                                the_post_thumbnail('medium_large');
+                            } ?>
 
-                    <p><?php the_excerpt(); ?></p>
+                        <h5><?php the_time('j M Y'); ?></h5>
 
-                    <div class="button-post">
-                        <a href="<?php the_permalink() ?>">Read more</a>
-                        <svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-                        <line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#f1234c"></line>
-                        <line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#f1234c"></line>
-                        <line id="svg_5" y2="6" x2="20" y1="12" x1="15" stroke="#f1234c"></line>
-                        </svg>
-                    </div>
+                        <h4><?php the_title(); ?></h4>
 
+                        <p><?php the_excerpt(); ?></p>
 
-                    </div>
+                        <div class="button-post">
+                            <a href="<?php the_permalink() ?>">Read more</a>
+                            <svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                            <line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#f1234c"></line>
+                            <line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#f1234c"></line>
+                            <line id="svg_5" y2="6" x2="20" y1="12" x1="15" stroke="#f1234c"></line>
+                            </svg>
+                        </div> 
+                    </div><!-- Grid item right -->
                      
-                    <?php endwhile; 
-                     
-                    else: ?>
-                    <p>Sorry, no posts matched your criteria.</p>
-                     
-                     
-                    <?php endif; ?>
+                    <div class="clear"></div>
+                    <?php
+                    $counter = 0;
+                    endif;
+                    $counter++;
+                    endwhile;
+                    wp_reset_postdata();
+                    ?>
+
                 </div>
             </div>
 
