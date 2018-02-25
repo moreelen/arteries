@@ -73,38 +73,28 @@ get_header(); ?>
 						<div class="col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
 							<h2>Our connections</h2>
 							<div id="con-logos" class="row">
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
-								<div class="col-xs-6 col-md-3 col-lg-3">
-									<p><img src="#"></p>
-									<p><a href="#">Connection</a></p>
-								</div>
+								
+								<?php $the_query = new WP_Query( 'post_type=connections', 'posts_per_page=5' ); ?>`
+
+			                    <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+
+			                        <div class="post col-sx-12 col-sm-3 col-md-3 col-lg-3">
+
+			                        <?php
+			                            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+			                                the_post_thumbnail('medium_large');
+			                            } ?>
+
+			                        <?php the_excerpt(); ?>
+
+			                        </div>
+
+			                        <?php
+			                    endwhile;
+			                    wp_reset_postdata();
+			                    ?>
+
+
 							</div>
 						</div>
 					</div>

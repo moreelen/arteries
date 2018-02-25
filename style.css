@@ -41,11 +41,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+@import url('https://fonts.googleapis.com/css?family=Plaster');
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+@import url('https://fonts.googleapis.com/css?family=Codystar');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: metropolis;
+	font-family: 'Lato', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -110,8 +121,7 @@ dfn {
 }
 
 h1 {
-	font-size: 42px;
-	margin: 0.67em 0;
+	
 }
 
 mark {
@@ -283,7 +293,7 @@ select,
 optgroup,
 textarea {
 	color: #433d35;
-	font-family: metropolis;
+	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -295,15 +305,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-weight: bold;
+	font-size: 52px;
+	margin: 0.67em 0;
+	font-family: 'Lato', cursive;
+	font-weight: bolder;
+	letter-spacing: 3px;
 	color: #ffffff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 
 h2 {
 	font-weight: bold;
     text-transform: uppercase;
     font-size: 30px;
+    letter-spacing: 3px;
 }
 
 h3 {
@@ -311,6 +326,7 @@ h3 {
 	color: #f1234c;
 	margin-top: 0px;
 	text-align: left;
+	letter-spacing: 0.5px;
 }
 
 h4 {
@@ -583,6 +599,7 @@ h4 a {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .button-post {
@@ -1054,7 +1071,7 @@ svg {
 #newsletter {
 	text-align: center;
 	padding-top: 30px;
-	padding-bottom: 0px;
+	padding-bottom: 60px;
 }
 
 #up-background {
@@ -1075,6 +1092,37 @@ svg {
 #up svg {
 	margin-top: 15px;
 }
+
+.wide {
+	width: 100%;
+	background-color: #ffffff;
+}
+
+#foot-dir {
+	text-align: center;
+}
+
+#foot-dir ul {
+	margin-bottom: 0px;
+	margin-left: 0px;
+    padding-left: 0px;
+}
+
+#foot-dir li {
+	display: inline-block;
+    padding: 14px;
+}
+
+#foot-dir a {
+	color: #433d35;
+	text-decoration: none;
+}
+
+#foot-dir a:hover {
+	color: #433d35;
+	border-bottom: 1px solid #433d35 !important;
+}
+
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1305,9 +1353,11 @@ svg {
 	text-align: center;
 }
 
-#con-logos p a {
+#con-logos p {
 	color: #433d35;
 	text-decoration: none;
+	text-align: center;
+	margin-top: 0px;
 }
 
 #con-logos p img {

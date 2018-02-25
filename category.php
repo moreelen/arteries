@@ -32,9 +32,7 @@ get_header(); ?>
                     <div id="ul-container" class="col-sm-12 col-md-12 col-lg-12">
                         <h2>Select topic</h2>
                         <ul>
-                            <?php wp_list_categories( array(
-                                'orderby'    => 'name',
-                            ) ); ?> 
+                            <?php wp_list_categories(  ); ?> 
                         </ul>
                     </div>
                 </div>

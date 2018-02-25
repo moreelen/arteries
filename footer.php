@@ -70,6 +70,20 @@
 				</div>
 			</div>
 		</div>
+		<div class="wide">
+			<div id="foot-dir" class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<ul>
+							<li><a href="/">&copy; Arteries 2018</a></li>
+							<li><a href="/about">About us</a></li>
+							<li><a href="/hub">Blog</a></li>
+							<li><a href="/contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
