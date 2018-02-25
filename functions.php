@@ -193,11 +193,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 add_filter( 'wp_mail_from_name', 'my_mail_from_name' );
 function my_mail_from_name( $name ) {
-    return "Arteries";
+    return "Arteries contact form";
 }
 add_filter( 'wp_mail_from', 'my_mail_from' );
 function my_mail_from( $email ) {
-    return "r.carbomascarell@gmail.com";
+    return "hello@arteries.earth";
 }
 // AJAX send contact form
 function contacts_form()
@@ -206,7 +206,7 @@ function contacts_form()
     $name = trim(htmlspecialchars($_POST['name']));
     $mail = trim(htmlspecialchars($_POST['email']));
     $comment = trim(htmlspecialchars($_POST['comment']));
-    $mailTo = 'r.carbomascarell@gmail.com';
+    $mailTo = 'hello@arteries.earth';
     //$mailTo = get_field('email', 'option');
     
     $textMessage = "<table>
@@ -228,7 +228,7 @@ function contacts_form()
                     </table>";
     }
     if(!empty($name) || !empty($mail) || !empty($phone)) {
-        wp_mail($mailTo, '|Arteries', $textMessage, $headers);
+        wp_mail($mailTo, 'Arteries contact form', $textMessage, $headers);
     }
     wp_die();
 }

@@ -38,8 +38,8 @@ get_header(); ?>
 						<input type="email" id="user_email" name="email" value="Email">
 						<textarea id="user_comment" name="comment"></textarea>
 						<div class="submit">
-							<input type="submit" value="Submit">
-							<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+							<input type="submit" value="Submit" id="form_submit">
+							<svg id="form_svg" width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 							<line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#ffffff"></line>
 							<line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#ffffff"></line>
 							<line id="svg_5" y2="6" x2="20" y1="12" x1="15" stroke="#ffffff"></line>

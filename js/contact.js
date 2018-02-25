@@ -1,5 +1,4 @@
 jQuery('#form_contact').submit(function(){ // Form submit
-    console.log("Click");
 
     // Functions
     function isValidEmailAddress(email) {
@@ -31,17 +30,18 @@ jQuery('#form_contact').submit(function(){ // Form submit
     // Send form data
     var data = jQuery(this).serialize();
     if( submit < 1 && requareName != false ) {  
-    console.log("Sending.");  
+    jQuery("#form_submit").replaceWith('<input type="submit" value=". . ." id="form_submit">');
+    jQuery("#form_svg").remove();
         jQuery.ajax({
             type: 'POST',
             url: "/wp-admin/admin-ajax.php",
             data: data + '&action=contacts_form',
             success: function (data) {
                 jQuery("#user_name, #user_email, #user_phone, #user_comment").val('');
-                console.log("Success!");
+                jQuery("#form_submit").replaceWith('<input type="submit" value="Sent" id="form_submit">');
             },
             error: function (xhr, ajaxOptions, thrownError) {
-                console.log("Fail...");
+                jQuery("#form_submit").replaceWith('<input type="submit" value="Error" id="form_submit">');
             }
         });
     }
