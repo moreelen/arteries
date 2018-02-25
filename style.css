@@ -616,6 +616,7 @@ h4 a {
     text-decoration: none;
     font-size: 12px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 input[type="text"] {
@@ -631,8 +632,11 @@ input[type="submit"] {
     color: white;
     background-color: #433d35;
     border-radius: 0px;
-    font-size: 16px;
-    line-height: 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .submit {
