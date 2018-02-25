@@ -19,7 +19,7 @@ get_header(); ?>
 			<div id="contact-background" class="container">
 				<div class="darken">
 					<div class="row">
-						<div id="contact-intro" class="col-xs-9 col-xs-offset-2 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+						<div id="contact-intro" class="col-xs-12 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 							<h1 id="scroll">Contact us</h1>
 						</div>
 					</div>

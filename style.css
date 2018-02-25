@@ -998,6 +998,20 @@ svg {
 	padding-bottom: 14px;
 }
 
+@media (max-width: 767px) {
+	.post {
+		padding-bottom: 60px;
+	}
+
+	.post.griditemleft {
+		padding-bottom: 14px;
+	}
+
+	.post.griditemright {
+		padding-bottom: 14px;
+	}
+}
+
 /* 3rd post temporary bug fix */
 @media (min-width: 767px) {
 	#posts-row div:nth-of-type(3) {
@@ -1413,6 +1427,16 @@ svg {
 	width: 33%;
 }
 
+@media (max-width: 767px) {
+	.griditemleft {
+		width: 100%;
+	}
+
+	.griditemright {
+		width: 100%;
+	}
+}
+
 #ul-container ul {
 	margin: auto;
     padding: 0px;
@@ -1433,9 +1457,9 @@ ul {
 
 .cat-item {
 	visibility: visible;
-	color: #433e35;
-	display: inline;
-	padding: 25px;
+    color: #433e35;
+    display: inline-block;
+    padding: 14px;
     font-weight: bold;
 }
 
