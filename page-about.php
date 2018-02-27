@@ -19,7 +19,7 @@ get_header(); ?>
 			<div id="about-background" class="container">
 				<div class="darken">
 					<div class="row">
-						<div id="about-intro" class="col-xs-12 col-sm-4 col-sm-offsest-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+						<div id="about-intro" class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 							<h1 id="scroll">About us</h1>
 						</div>
 					</div>
@@ -33,10 +33,18 @@ get_header(); ?>
 							<p>Every project is unique and we bring together the team to match it. Between us we have built social movements &amp; sustainable infrastructure, designed participatory processes &amp; multimedia platforms, curated immersive events &amp; multi-year learning journeys.</p>
 							<p>We are a community of practice &amp; a movement for change.</p>
 							<p>We believe in collaborating to transform systems. Get in touch, we’d love to work with you.</p>
+							<div class="button">
+								<a href="/contact">Contact us</a>
+								<svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+								<line id="svg_1" y2="6" x2="20" y1="6" x1="0" stroke="#ffffff"></line>
+								<line id="svg_3" y2="6" x2="20" y1="0" x1="15" stroke="#ffffff"></line>
+								<line id="svg_5" y2="6" x2="20" y1="12" x1="15" stroke="#ffffff"></line>
+								</svg>
+							</div>
 						</div>
 						<div id="what-photo" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<div class="row">
-								<div id="offer" class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-6 col-offset-6 col-lg-6 col-lg-offset-6">
+								<div id="offer" class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-6 col-offset-6 col-lg-7 col-lg-offset-5">
 									<h3>What we offer</h3>
 									<h2>Research</h2>
 									<h2>Facilitation</h2>
