@@ -29,9 +29,8 @@ get_header(); ?>
 				<div class="row">
 					<div id="info" class="col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
 						<h2>Contact us</h2>
-						<p>We’re interested in collaborating to build a future for all of us. 
-						</br>Come say <a href="mailto:hello@arteries.earth">hello@arteries.earth</a></p>
-						<p>We’d love to chat.</p>
+						<p>We’re interested in collaborating to build a future for all of us.</p>
+						<p>Get in touch, we’d love to chat.</p>
 
 						<form action="javascript:void(null);" method="post" id="form_contact">
 						<input type="text" id="user_name" name="name" value="Name">

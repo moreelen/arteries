@@ -12,8 +12,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<h2>About Arteries</h2>
-<p>Arteries design projects, platforms and processes that support people, organisations and communities to build better futures. We tell the stories of these futures, weaving past &amp; present across time &amp; geopolitical space.</p>
+<p>Arteries design projects, platforms and processes that support people, organisations and communities to build better futures.</p>
 <aside id="secondary" class="widget-area">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	<h2>Follow us</h2>

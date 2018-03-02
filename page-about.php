@@ -61,10 +61,10 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-6 col-lg-offset-3">
 						<h2>Our practice</h2>
-						<p>Arteries work with people and communities who lead the design of our projects. We prioritise understanding the most marginalised perspectives. This often leads the way to unearthing root causes.</p>
+						<p>Arteries work with people and communities who lead the design of our projects. We prioritise understanding the most marginalised perspectives. This often leads the way to understanding root causes.</p>
 						<p>Arteries also take a whole systems view, working from analysis of established infrastructures to create more context-responsive alternatives. We regenerate social, environmental and cultural wealth.</p>
 						<p>Organisations often see change as linear – ‘if we do this then it is likely to result in that’.</p>
-						<p>Arteries see change as emergent and non-linear. Many of the most powerful changes are not easily predicted. So to increase our chances of creating positive outcomes, we design and facilitate learning architecture for people in different inquiry strands, enabling us to see systems from many different angles, including those missing from the viewpoint of any single group.</p>
+						<p>Arteries see change as emergent. Many of the most powerful changes are not easily predicted. So to increase our chances of creating positive outcomes, we design and facilitate learning architecture for people in different inquiry strands, enabling us to see systems from many different angles, including those missing from the viewpoint of any single group.</p>
 						<p>We weave together these strands, looking at patterns at different scales. Working with diverse groups in this way can enable all participants to gain a broader and deeper perspective on the systems they are part of, emerging new possibilities.</p>
 						<p>Power inequalities can prevent these from being seen and put into practice, so we facilitate our way through these. Effective movement on the kinds of problems that our societies face today often comes from creating resonance between people in diverse, often conflicting, groups. This leads to effective ownership over the outcomes of a change process, which can range from new social innovations to policy frameworks.</p>
 						<ol>
